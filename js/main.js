@@ -24,3 +24,15 @@ const items = [
       quantity: 20
     }
   ]
+
+const loadComponent = () =>{
+    const loader = document.getElementById("loader-container");
+    setTimeout( () => {
+        loader.classList.add("hide")
+    }, 3000)
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadComponent();
+
+});
