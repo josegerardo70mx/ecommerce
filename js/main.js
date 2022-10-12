@@ -36,20 +36,18 @@ const openMenu = () =>{
   const btnOpen = document.getElementById("menu-open")
   btnOpen.addEventListener("click", e => {
     menu.classList.add("open")
-    console.log("click")
   })
 }
 
 const closeMenu = () => {
   const btnClose = document.getElementById("menu-close")
   btnClose.addEventListener( "click", e => {
-    // menu.classList.remove("open")
-    console.log("click")
+    menu.classList.remove("open")
   })
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent();
   openMenu();
-
+  closeMenu();
 });

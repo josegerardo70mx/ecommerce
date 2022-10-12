@@ -7,6 +7,7 @@ Proyecto de [Academlo](https://www.academlo.com/) parte del bloque de fundamento
 * [José Argüelles Sandoval](https://github.com/josegerardo70mx)
 * [Adelina Pelagio Juarez](https://github.com/Adepj)
 * [Jonathan Mesach Venegas Santana](https://github.com/MesachVenegas)
+* Lucero Camila González
 
 ## Mobile view
 
