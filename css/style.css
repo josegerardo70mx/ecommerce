@@ -32,6 +32,10 @@
   box-sizing: border-box;
 }
 
+img{
+  width: 100%;
+}
+
 .loader-container{
   background-color: whitesmoke;
   width: 100%;
@@ -167,3 +171,12 @@
     top: 0;
   }
 }
+
+/*HOME*/
+
+.contenedor-home{
+    position: relative;
+    row-gap: 2.5rem;
+}
+
+
