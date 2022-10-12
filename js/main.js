@@ -24,6 +24,7 @@ const items = [
       quantity: 20
     }
   ]
+const menu = document.getElementById("menu")
 
 const loadComponent = () =>{
     const loader = document.getElementById("loader-container");
@@ -31,8 +32,24 @@ const loadComponent = () =>{
         loader.classList.add("hide")
     }, 3000)
 }
+const openMenu = () =>{
+  const btnOpen = document.getElementById("menu-open")
+  btnOpen.addEventListener("click", e => {
+    menu.classList.add("open")
+    console.log("click")
+  })
+}
+
+const closeMenu = () => {
+  const btnClose = document.getElementById("menu-close")
+  btnClose.addEventListener( "click", e => {
+    // menu.classList.remove("open")
+    console.log("click")
+  })
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-    loadComponent();
+  loadComponent();
+  openMenu();
 
 });

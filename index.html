@@ -41,10 +41,15 @@
             <p class="brand-name">STORE</p>
         </div>
         <!-- Menu de opciones del navbar -->
-        <ul class="navbar-menu">
-            <li class="menu-item">Home</li>
-            <li class="menu-item">Products</li>
-        </ul>
+        <div class="menu-container" id="menu">
+            <div class="btn-close" id="menu-close">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+            <ul class="navbar-menu">
+                <li class="menu-item active">Home</li>
+                <li class="menu-item">Products</li>
+            </ul>
+        </div>
         <!-- Menu de iconos -->
         <div class="navbar-icons">
             <div class="icon-item">
@@ -55,7 +60,7 @@
                 <span class="counter" id="shop-counter">0</span>
             </div>
             <div class="icon-item">
-                <i class="fa-solid fa-bars" id="btn-menu"></i>
+                <i class="fa-solid fa-bars" id="menu-open"></i>
             </div>
         </div>
     </nav>
