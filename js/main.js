@@ -1,11 +1,26 @@
+import {closeCart, openCart} from './cart.mjs'
+
 const menu = document.getElementById("menu")
 
 // Animacion de carga del website.
 const loadComponent = () =>{
-    const loader = document.getElementById("loader-container");
-    setTimeout( () => {
-        loader.classList.add("hide")
-    }, 3000)
+  const loader = document.getElementById("loader-container");
+  setTimeout( () => {
+    loader.classList.add("hide")
+  }, 3000)
+}
+
+// Cambia a darkmode.
+const changeMode = () => {
+  const btnDark =document.getElementById("darkmode")
+  btnDark.addEventListener("click", () => {
+    document.body.classList.toggle("dark")
+    if (btnDark.classList.contains("fa-moon")) {
+      btnDark.classList.replace("fa-moon", "fa-sun")
+    } else {
+      btnDark.classList.replace("fa-sun", "fa-moon")
+    }
+  })
 }
 
 // abre el menu de navegación.
@@ -24,23 +39,13 @@ const closeMenu = () => {
   })
 }
 
-// Cambia a darkmode.
-const changeMode = () => {
-  const btnDark =document.getElementById("darkmode")
-  btnDark.addEventListener("click", () => {
-    document.body.classList.toggle("dark")
-    if (btnDark.classList.contains("fa-moon")) {
-      btnDark.classList.replace("fa-moon", "fa-sun")
-    } else {
-      btnDark.classList.replace("fa-sun", "fa-moon")
-    }
-  })
-}
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadComponent();
-  openMenu();
-  closeMenu();
-  changeMode();
+  loadComponent()
+  openMenu()
+  closeMenu()
+  changeMode()
+  openCart()
+  closeCart()
 });
