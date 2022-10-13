@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- FontAwesome Icon Kit -->
     <script src="https://kit.fontawesome.com/ea9b6ffb65.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./assets/svgs/logo_sin_contorno.svg" type="image/x-icon">
     <title>Academlo Store</title>
 </head>
@@ -24,46 +25,53 @@
             </g>
         </svg>
     </div>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="brand">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="brand-logo">
-                <title>Academlo Logo</title>
-                <g>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="brand-logo">
+                    <title>Academlo Logo</title>
                     <g>
-                    <path
-                        d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
-                    </path>
+                        <g>
+                        <path
+                            d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                        </path>
+                        </g>
                     </g>
-                </g>
-            </svg>
-            <p class="brand-name">STORE</p>
+                </svg>
+                <p class="brand-name">STORE</p>
+            </div>
+            <!-- Menu de opciones del navbar -->
+            <div class="menu-container" id="menu">
+                <div class="btn-close" id="menu-close">
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="menu-item active">Home</li>
+                    <li class="menu-item">Products</li>
+                </ul>
+            </div>
+            <!-- Menu de iconos -->
+            <div class="navbar-icons">
+                <div class="icon-item">
+                    <i class="fa-solid fa-moon" id="darkmode"></i>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="counter" id="shop-counter">0</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-bars" id="menu-open"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-grid">
+            <div class="bg-img">
+                <img class="home-img" src="./assets/images/home.png" alt="Hoddie_Academlo">
+            </div>
         </div>
-        <!-- Menu de opciones del navbar -->
-        <div class="menu-container" id="menu">
-            <div class="btn-close" id="menu-close">
-                <i class="fa-sharp fa-solid fa-xmark"></i>
-            </div>
-            <ul class="navbar-menu">
-                <li class="menu-item active">Home</li>
-                <li class="menu-item">Products</li>
-            </ul>
-        </div>
-        <!-- Menu de iconos -->
-        <div class="navbar-icons">
-            <div class="icon-item">
-                <i class="fa-solid fa-moon"></i>
-            </div>
-            <div class="icon-item">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="counter" id="shop-counter">0</span>
-            </div>
-            <div class="icon-item">
-                <i class="fa-solid fa-bars" id="menu-open"></i>
-            </div>
-        </div>
-    </nav>
 
     <!---   Home   --->
 <section class="home" id="home">
@@ -77,6 +85,4 @@
     <!--- Home END--->
 
 </body>
-<!-- Script -->
-<script src="./js/main.js"></script>
 </html>
