@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Hoja de Estilos -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- FontAwesome Icon Kit -->
     <script src="https://kit.fontawesome.com/ea9b6ffb65.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./assets/svgs/logo_sin_contorno.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/svgs/logo_sin_contorno.svg" type="image/x-icon" />
     <title>Academlo Store</title>
 </head>
+
 <body>
     <!-- Loader content page -->
     <div class="loader-container" id="loader-container">
@@ -18,83 +20,170 @@
             <title>Academlo Logo</title>
             <g>
                 <g>
-                <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path>
-                <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"></path>
+                    <path
+                        d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                    </path>
+                    <path
+                        d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                    </path>
                 </g>
             </g>
         </svg>
     </div>
 
     <header class="scroll-header" id="header">
-    <!-- Navbar -->
-    <nav class="navbar container">
-        <div class="brand">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="brand-logo">
-                <title>Academlo Logo</title>
-                <g>
+        <!-- Navbar -->
+        <nav class="navbar container">
+            <div class="brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="brand-logo">
+                    <title>Academlo Logo</title>
                     <g>
-                    <path
-                        d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
-                    </path>
+                        <g>
+                            <path
+                                d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                            </path>
+                        </g>
                     </g>
-                </g>
-            </svg>
-            <p class="brand-name">STORE</p>
-        </div>
-        <!-- Menu de opciones del navbar -->
-        <div class="menu-container" id="menu"> 
-            <div class="btn-close" id="menu-close">
-                <i class="fa-sharp fa-solid fa-xmark"></i>
+                </svg>
+                <p class="brand-name">STORE</p>
             </div>
-            <ul class="navbar-menu">
-                <li class="menu-item active"> <a href="#" class="nav__link active-link">Home</a></li>
-                <li class="menu-item">Products</li>
-            </ul>
-        </div>
-        <!-- Menu de iconos -->
-        <div class="navbar-icons"> 
-            <div class="icon-item">
-                <i class="fa-solid fa-moon"></i>
+            <!-- Menu de opciones del navbar -->
+            <div class="menu-container" id="menu">
+                <div class="btn-close" id="menu-close">
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="menu-item active">
+                        <a href="#" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="menu-item">Products</li>
+                </ul>
             </div>
-            <div class="icon-item">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="counter" id="shop-counter">0</span>
+            <!-- Menu de iconos -->
+            <div class="navbar-icons">
+                <div class="icon-item">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="counter" id="shop-counter">0</span>
+                </div>
+                <div class="icon-item">
+                    <i class="fa-solid fa-bars" id="menu-open"></i>
+                </div>
             </div>
-            <div class="icon-item">
-                <i class="fa-solid fa-bars" id="menu-open"></i>
-            </div>
-        </div>
-    </nav>
-</header>
-    <!---   Home   --->
-<section class="home" id="home">
-    <div class="contenedor-home grid container" >
-        <div class="imagen-home" > <!--flex container-->
-            <img class="home_img" src="./assets/images/imagen-home.png" alt="img_home">
-        </div>
-    </div>
-<div class="collections2022-home">
-    <h1 class="title-home">New Sweatshirt <br>COLLECTIONS 2022</h1>
-    <p class="text-home">
-      Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
-      design.
-    </p>
-    <span class="price-home">$14.00</span>
+        </nav>
+    </header>
 
-    <div class="btns-home">
-      <a href="#" class="boton btn-gray btn-small">
-        Discover
-      </a>
+    <!---   HOME   --->
+    <section class="home" id="home">
+        <div class="contenedor-home grid container">
+            <div class="imagen-home">
+                <!--flex container-->
+                <img class="home_img" src="./assets/images/imagen-home.png" alt="img_home" />
+            </div>
+        </div>
+        <div class="collections2022-home">
+            <h1 class="title-home">New Sweatshirt <br />COLLECTIONS 2022</h1>
+            <p class="text-home">
+                Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported
+                from the 2022 series, with a modern design.
+            </p>
+            <span class="price-home">$14.00</span>
 
-      <button class="boton btn-home">ADD TO CART</button>
-    </div>
-  </div>
-</section>
+            <div class="btns-home">
+                <a href="#" class="boton btn-gray btn-small"> Discover </a>
 
+                <button class="boton btn-home">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
 
     <!--- Home END--->
+    
+ <!--- Menu Products   -->
+    <section class="seccion-productos" id="products">
+        <div class="container-menu container">
+            <ul class="contenedor-ul-grid">
+                <li class="products__item products__line" data-filter="all">
+                    <h3 class="name-area-product">Show All</h3>
+                    <span class="stock-products"> show all products </span>
+                </li>
 
+                <li class="products__item products__line" data-filter=".hoodies">
+                    <h3 class="name-area-product">Hoodies</h3>
+                    <span class="stock-products"> 3 products </span>
+                </li>
+
+                <li class="products__item products__line" data-filter=".shirts">
+                    <h3 class="name-area-product">Shirts</h3>
+                    <span class="stock-products"> 4 products </span>
+                </li>
+
+                <li class="products__item" data-filter=".sweatshirts">
+                    <h3 class="name-area-product">Sweatshirts</h3>
+                    <span class="stock-products"> 4 products </span>
+                </li>
+            </ul>
+
+            <!--- ACADEMLO Products --->
+
+            <div class="contenedor-productos grid" id="products-content" style>
+                <article class="products__card hoodies">
+                    <div class="medida-card">
+                        <img src="./assets/images/featured1.png" alt="Hoodies" class="products__img" />
+                    </div>
+
+                    <div class="product-info">
+                        <h2 class="data-price">
+                            $14.00 <span class="cantidad-productos>| Stock: 10</span>
+                        </h2>
+                        <h3 class="products__name">Hoodies</h3>
+
+                        <button class="boton products__button" data-id="1">
+                            <i class="bx bx-plus"></i>
+                        </button>
+                    </div>
+                </article>
+                <article class="products__card shirts">
+                    <div class="medida-card">
+                        <img src="./assets/images/featured2.png" alt="Shirts" class="products__img" />
+                    </div>
+
+                    <div class="product-info">
+                        <h2 class="data-price">
+                            $24.00 <span class="cantidad-productos">| Stock: 15</span>
+                        </h2>
+                        <h3 class="products__name">Shirts</h3>
+
+                        <button class="boton products__button" data-id="2">
+                            <i ></i>
+                        </button>
+                    </div>
+                </article>
+                <article class="products__card sweatshirts">
+                    <div class="medida-card">
+                        <img src="./assets/images/featured3.png" alt="Sweatshirts" class="products__img" />
+                    </div>
+
+                    <div class="product-info">
+                        <h2 class="data-price">
+                            $24.00 <span class="cantidad-productos">| Stock: 20</span>
+                        </h2>
+                        <h3 class="products__name">Sweatshirts</h3>
+
+                        <button class="boton products__button" data-id="3">
+                            <i ></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!---ACADEMLO Products END--->
 </body>
 <!-- Script -->
 <script src="./js/main.js"></script>
+
 </html>
