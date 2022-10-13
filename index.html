@@ -25,8 +25,9 @@
         </svg>
     </div>
 
+    <header class="scroll-header" id="header">
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar container">
         <div class="brand">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="brand-logo">
                 <title>Academlo Logo</title>
@@ -41,17 +42,17 @@
             <p class="brand-name">STORE</p>
         </div>
         <!-- Menu de opciones del navbar -->
-        <div class="menu-container" id="menu">
+        <div class="menu-container" id="menu"> 
             <div class="btn-close" id="menu-close">
                 <i class="fa-sharp fa-solid fa-xmark"></i>
             </div>
             <ul class="navbar-menu">
-                <li class="menu-item active">Home</li>
+                <li class="menu-item active"> <a href="#" class="nav__link active-link">Home</a></li>
                 <li class="menu-item">Products</li>
             </ul>
         </div>
         <!-- Menu de iconos -->
-        <div class="navbar-icons">
+        <div class="navbar-icons"> 
             <div class="icon-item">
                 <i class="fa-solid fa-moon"></i>
             </div>
@@ -64,16 +65,33 @@
             </div>
         </div>
     </nav>
-
+</header>
     <!---   Home   --->
 <section class="home" id="home">
     <div class="contenedor-home grid container" >
         <div class="imagen-home" > <!--flex container-->
-            <img src="./assets/images/imagen-home.png" alt="img_home">
+            <img class="home_img" src="./assets/images/imagen-home.png" alt="img_home">
         </div>
     </div>
-<div class="collections2022-home"></div>
+<div class="collections2022-home">
+    <h1 class="title-home">New Sweatshirt <br>COLLECTIONS 2022</h1>
+    <p class="text-home">
+      Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+      design.
+    </p>
+    <span class="price-home">$14.00</span>
+
+    <div class="btns-home">
+      <a href="#" class="boton btn-gray btn-small">
+        Discover
+      </a>
+
+      <button class="boton btn-home">ADD TO CART</button>
+    </div>
+  </div>
 </section>
+
+
     <!--- Home END--->
 
 </body>
