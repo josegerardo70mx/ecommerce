@@ -60,7 +60,7 @@ ul {
 a {
   text-decoration: none;
 }
-/* estilos generales END*/
+/* Estilos generales END*/
 
 
 .loader-container{
@@ -208,7 +208,7 @@ a {
   }
 }
 
-/*HOME*/
+/* HOME */
 .container {
   max-width: 1024px;
   margin-left:1.5rem;;
@@ -293,4 +293,4 @@ header{
     z-index: 100; 
 } 
 
-/*HOME END*/
+/* HOME END */
