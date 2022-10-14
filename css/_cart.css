@@ -3,7 +3,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--container-color);
 }
 
@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     right: -100%;
-    padding: 1rem;
+    padding: 1.5rem;
     transition: right .3s linear;
     background-color: var(--container-color);
     z-index: 50;
@@ -38,6 +38,7 @@
 
 .cart-content{
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -70,10 +71,10 @@
 
 .btn-checkout{
     align-self: flex-end;
-    background-color: var(--button-color-alt);
-    color: var(--text-color);
     width: 50%;
     height: 40px;
     border: none;
     margin-top: 1rem;
+    color: var(--text-color);
+    background-color: var(--border-color);
 }
