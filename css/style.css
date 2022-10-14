@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url(./_cart.css);
+@import url(./_home.css);
 
 :root {
   --first-color: hsl(354, 78%, 60%);
@@ -20,6 +21,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   background-color: var(--body-color);
   color: var(--text-color);
@@ -44,6 +46,10 @@ body.dark{
 
 img{
   width: 100%;
+}
+
+.btn{
+  cursor: pointer;
 }
 
 .loader-container{
@@ -173,70 +179,6 @@ img{
   font-size: .9rem;
 }
 
-main{
-  position: static;
-}
-
-.home-product{
-  display: flex;
-  flex-direction: column-reverse;
-  padding: 1.5rem;
-  height: auto;
-  background-color: var(--container-color);
-}
-
-.bg-home-img{
-  display: flex;
-  position: absolute;
-  top: -6rem;
-  right: 0;
-  width: 230px;
-  height: 500px;
-  background-color: var(--first-color);
-}
-
-.product-desc{
-  display: flex;
-  position: relative;
-  margin-top: 20rem;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-#home-price{
-  color: var(--first-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.btn-group{
-  display: flex;
-  align-items: center;
-}
-
-#btn-discover-home{
-  border: none;
-  width: 100px;
-  height: 50px;
-  font-weight: bold;
-  color: var(--button-color);
-  background-color: var(--button-color-alt);
-}
-
-#btn-add-home{
-  border: none;
-  width: 120px;
-  height: 60px;
-  font-weight: bold;
-  color: #FFF;
-  background-color: var(--button-color);
-}
-
-.home-img{
-  align-self: flex-end;
-  margin-bottom: 2rem;
-}
-
 @keyframes loading {
   0%{
     top: 0;
@@ -248,12 +190,3 @@ main{
     top: 0;
   }
 }
-
-/*HOME*/
-
-.contenedor-home{
-    position: relative;
-    row-gap: 2.5rem;
-}
-
-
