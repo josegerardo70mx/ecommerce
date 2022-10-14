@@ -67,6 +67,7 @@
     height: 50px;
     border-radius: 50%;
     color: #FFF;
+    cursor: pointer;
     background-color: var(--button-color-alt);
 }
 
