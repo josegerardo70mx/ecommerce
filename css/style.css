@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url(./_cart.css);
 @import url(./_home.css);
+@import url(./_products.css);
 
 :root {
   --first-color: hsl(354, 78%, 60%);
@@ -39,7 +40,7 @@ body.dark{
   --card-color: hsla(246, 16%, 5%, .5);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 75%);
-  --body-color: hsl(249, 19%, 14%);
+  --body-color: hsl(249, 13%, 21%);
   --container-color: hsl(246, 16%, 12%);
   --border-color: hsl(0, 0%, 20%);
 }
