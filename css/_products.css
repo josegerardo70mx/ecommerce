@@ -1,0 +1,32 @@
+:root {
+    --first-color: hsl(354, 78%, 60%);
+    --button-color: hsl(0, 0%, 17%);
+    --button-color-alt: hsl(0, 0%, 65%);
+    --card-color: hsl(0, 0%, 90%);
+    --title-color: hsl(0, 0%, 15%);
+    --text-color: hsl(0, 0%, 35%);
+    --text-color-light: hsl(0, 0%, 78%);
+    --body-color: hsl(206, 4%, 97%);
+    --container-color: #fff;
+    --border-color: hsl(0, 0%, 94%);
+    --body-font: 'Roboto', sans-serif;
+}
+
+.product-filter-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+    width: 350px;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.product-filter{
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
