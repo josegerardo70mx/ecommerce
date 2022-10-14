@@ -64,7 +64,6 @@
 #btn-add-home:hover{
     width: 125px;
     height: 65px;
-    box-shadow: 2px 2px 2px 2px rgba(3, 3, 3, .4);
 }
 
 .home-img {
