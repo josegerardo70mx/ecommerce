@@ -3,7 +3,6 @@
     flex-direction: column-reverse;
     padding: 1.5rem;
     height: auto;
-    background-color: var(--container-color);
 }
 
 .bg-home-img {

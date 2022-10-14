@@ -110,7 +110,7 @@ img{
 .menu-container{
   display: flex;
   justify-content: center;
-  background-color: var(--body-color);
+  background-color: var(--container-color);
   position: absolute;
   font-size: 1.5rem;
   width: 100%;
@@ -142,6 +142,7 @@ img{
   align-items: center;
   margin-top: 6rem;
   list-style: none;
+  background-color: var(--container-color);
 }
 
 .menu-item{
