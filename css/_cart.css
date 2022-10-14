@@ -65,12 +65,15 @@
     padding: 1rem 2rem;
     width: 100vw;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .btn-checkout{
     align-self: flex-end;
+    background-color: var(--button-color-alt);
+    color: var(--text-color);
     width: 50%;
     height: 40px;
     border: none;
+    margin-top: 1rem;
 }
