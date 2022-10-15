@@ -12,7 +12,7 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    right: -100%;
+    right: -100vw;
     padding: 1.5rem;
     transition: right .3s linear;
     background-color: var(--container-color);
