@@ -181,6 +181,31 @@ img{
   font-size: .9rem;
 }
 
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  height: 35rem;
+  background-color: var(--card-color);
+}
+
+.foot-container{
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.foot-container>a,
+.social-icons>a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.foot-container.head{
+  margin-top: 4rem;
+}
+
 @keyframes loading {
   0%{
     top: 0;
