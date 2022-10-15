@@ -1,5 +1,5 @@
 import {closeCart, openCart} from './cart.mjs'
-import {loadProducts, items}  from './products.mjs'
+import {items}  from './products.mjs'
 
 const menu = document.getElementById("menu")
 
@@ -38,6 +38,34 @@ const closeMenu = () => {
   btnClose.addEventListener( "click", e => {
     menu.classList.remove("open")
   })
+}
+
+// carga los productos en invetrio en el website
+const loadProducts = (items) => {
+  items.forEach(item => {
+    const product = document.createElement("div")
+    product.classList.add("product-item")
+    product.innerHTML = `
+        <div class='product-img'>
+        <img src='./${item.image}' alt='${item.id}'>
+            </div>
+            <button onclick='getProduct()' id='add-btn' value='${item.id}'>+</button>
+            <div class='product-content'>
+                <div class='product-stock'>
+                    <h4>$${item.price.toFixed(2)}</h4>
+                    <hr class='stock-divisor'>
+                    <span id='stock-counter'>Stock:${item.quantity}</span>
+                </div>
+                <h4>${item.name}</h4>
+            </div>`;
+    document.querySelector(".products-list").appendChild(product)
+  });
+};
+
+// Selecciona el producto a agregar al carrito.
+const getProduct = () => {
+  let choose = document.getElementById('add-btn').value
+  console.log(choose);
 }
 
 
