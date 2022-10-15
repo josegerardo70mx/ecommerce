@@ -55,6 +55,7 @@
     display: flex;
     position: absolute;
     justify-content: center;
+    border: none;
     align-items: center;
     bottom: 4rem;
     right: 1rem;
