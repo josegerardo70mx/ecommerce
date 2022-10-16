@@ -40,7 +40,7 @@ const closeMenu = () => {
   })
 }
 
-// carga los productos en invetrio en el website
+// carga los productos en inventario en el website
 const loadProducts = (items) => {
   items.forEach(item => {
     const product = document.createElement("div")
@@ -62,10 +62,39 @@ const loadProducts = (items) => {
   });
 };
 
-// Selecciona el producto a agregar al carrito.
-const getProduct = () => {
-  let choose = document.getElementById('add-btn').value
-  console.log(choose);
+const cartFill = () => {
+  let itemCounter = 0;
+  let allItems = 0;
+  let subtotal = 0;
+  items.forEach( item => {
+    const cartContent = document.createElement('div')
+    cartContent.classList.add('to-buy')
+    cartContent.innerHTML = `
+      <div class='cart-item-img'>
+        <img src='./${item.image}'>
+      </div>
+      <div class='cart-item'>
+        <h4>${item.name}</h4>
+        <div class='cart-stock-item'>
+          <p>Stock: ${item.quantity}</p>
+          <hr>
+          <p class='item-price'>$${item.price.toFixed(2)}</p>
+        </div>
+        <p> Subtotal: <span class='cart-subtotal'>${subtotal.toFixed(2)}</span></p>
+        <div class='cart-add-erase'>
+          <div class='btn-add-erase'>
+            <button type='button' value='decrease' id='cart-decrease'> - </button>
+            <span id='qty-items'>1 units</span>
+            <button type='button' value='add' id='cart-add'> + </button>
+          </div>
+          <span class='btn-erase'>
+              <i class="fa-solid fa-trash"></i>
+          </span>
+        </di>
+      </div>
+    `
+    document.querySelector(".cart-fill").appendChild(cartContent)
+  })
 }
 
 
@@ -78,4 +107,5 @@ document.addEventListener("DOMContentLoaded", () => {
   openCart()
   closeCart()
   loadProducts(items)
+  cartFill()
 });
