@@ -124,7 +124,7 @@
 
 .cart-add-erase{
     display: flex;
-    width: 100%;
+    width: 150px;
     gap: 3rem;
     justify-content: space-between;
 }
