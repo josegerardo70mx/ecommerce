@@ -56,6 +56,19 @@ export const cartFill = () => {
     })
 
 }
+// console.log(e.srcElement.value);
+
+export const clearCart = () => {
+    const btnClear = document.getElementById('btn-clear')
+    btnClear.addEventListener('click', e => {
+        const cartItems  = document.getElementById('fill')
+        const cartEmpty = document.getElementById('empty')
+        cartItems.classList.add('hidden')
+        cartEmpty.classList.remove('hidden')
+        btnClear.classList.add('disabled')
+    })
+}
+
 
 export function moreItems(){
     console.log('hola');
