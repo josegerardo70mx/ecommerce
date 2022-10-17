@@ -15,7 +15,7 @@
     height: 100vh;
     right: -100vw;
     transition: right .3s linear;
-    background-color: var(--container-color);
+    background-color: var(--body-color);
     z-index: 50;
 }
 
@@ -39,13 +39,13 @@
 
 .cart-content{
     display: flex;
+    width: 100%;
     gap: 1rem;
-    padding: 1.5rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
-    background-color: var(--container-color);
+    background-color: var(--body-color);
 }
 
 .empty-cart{
@@ -60,7 +60,7 @@
 }
 
 .cart-title{
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
@@ -73,33 +73,44 @@
     margin-top: 1rem;
 }
 
+.btn-group-cart{
+    display: flex;
+    width: 100vw;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .btn-checkout{
-    align-self: flex-end;
-    width: 50%;
-    height: 40px;
-    border: none;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    color: var(--text-color);
-    background-color: var(--border-color);
+    width: 130px;
+    height: 45px;
+    border: 1px solid var(--border-color);
+    right: 2rem;
+    color: var(--text-color-light);
+    background-color: var(--button-color);
+}
+
+.btn-clear{
+    width: 130px;
+    height: 45px;
+    border: 1px solid var(--border-color);
+    background-color: var(--first-color);
 }
 
 .cart-fill{
     display: flex;
-    width: 100%;
-    height: 70%;
     overflow-y: scroll;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
     gap: 4rem;
+    padding: 1rem;
 }
 
 .to-buy{
     display: flex;
-    width: 100%;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
 }
 
@@ -127,23 +138,47 @@
 
 .cart-add-erase{
     display: flex;
-    width: 185px;
-    gap: 3rem;
+    gap: 4.5rem;
     justify-content: space-between;
+}
+
+.btn-add-erase{
+    display: flex;
 }
 
 #cart-decrease,
 #cart-add{
     border: 1px solid var(--border-color);
-    justify-self: center;
-    align-self: center;
     width: 20px;
     height: 20px;
     font-size: 1.2rem;
     font-weight: bold;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--card-color);
+}
+
+#cart-decrease:hover,
+#cart-add:hover{
+    background-color: var(--first-color);
+    color: #FFF;
+}
+
+#qty-items{
+    text-align: center;
+    width: 80px;
+    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
 }
 
 .btn-erase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-self: flex-end;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
     color: var(--first-color);
 }
+
