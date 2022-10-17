@@ -1,4 +1,4 @@
-import {closeCart, openCart, cartFill, moreItems, clearCart} from './cart.mjs'
+import {closeCart, openCart, cartFill, clearCart} from './cart.mjs'
 import {items}  from './products.mjs'
 
 const menu = document.getElementById("menu")
