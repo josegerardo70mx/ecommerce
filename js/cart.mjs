@@ -56,3 +56,8 @@ export const cartFill = () => {
     })
 
 }
+
+export function moreItems(){
+    console.log('hola');
+}
+
