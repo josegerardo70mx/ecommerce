@@ -1,4 +1,4 @@
-import {closeCart, openCart, cartFill, moreItems} from './cart.mjs'
+import {closeCart, openCart, cartFill, moreItems, clearCart} from './cart.mjs'
 import {items}  from './products.mjs'
 
 const menu = document.getElementById("menu")
@@ -71,4 +71,5 @@ document.addEventListener("DOMContentLoaded", () => {
   closeCart()
   loadProducts(items)
   cartFill()
+  clearCart()
 });
